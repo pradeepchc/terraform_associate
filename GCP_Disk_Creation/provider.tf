@@ -1,4 +1,8 @@
 terraform {
+
+  backend "remote" {
+    organization = "pradeep-terraform-cloud"
+  }
   required_providers {
     google = {
       source = "hashicorp/google"
