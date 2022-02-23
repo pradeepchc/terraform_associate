@@ -2,6 +2,9 @@ terraform {
 
   backend "remote" {
     organization = "pradeep-terraform-cloud"
+    workspaces {
+      name = "terraform_associate"
+    }
   }
   required_providers {
     google = {
