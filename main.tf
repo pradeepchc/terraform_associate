@@ -1,5 +1,4 @@
 terraform {
-
   backend "remote" {
     organization = "pradeep-terraform-cloud"
     workspaces {
@@ -21,7 +20,7 @@ provider "google" {
 resource "google_compute_disk" "default" {
   name  = "pradeep-disk1"
   type  = "pd-ssd"
-  zone  = "europe-west1-c"
+  zone  = "europe-west1-b"
   labels = {
     environment = "dev"
   }
