@@ -13,7 +13,11 @@ terraform {
   }
 }
 
-project = "sct-management-console"
+
+provider "google" {
+  project     = "sct-management-console"
+  region      = "europe-west1"
+}
 
 resource "google_compute_network" "this" {
     auto_create_subnetworks = false
