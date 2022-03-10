@@ -13,9 +13,6 @@ terraform {
   }
 }
 
-provider "google" {
-  project = "sct-management-console"
-
 resource "google_compute_network" "this" {
     auto_create_subnetworks = false
     name = "demo"
